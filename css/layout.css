@@ -101,9 +101,10 @@ h1{
 }
 
 #tabArea{
-	height:35px;
-	width:100%;
-	padding-left:20px;
+	height:100%;
+	width:50px;
+	padding-left:0px;
+	background-color:#FFC;
 }
 
 .tab{
@@ -111,7 +112,6 @@ h1{
 	height:30px;
 	width:50px;
 	float:left;
-	margin-left:5px;
 	white-space:nowrap;
 	cursor:pointer;
 }
@@ -130,7 +130,6 @@ h1{
 }
 
 .selected{
-	height:35px;
 	background:#c4c4c4;
 }
 

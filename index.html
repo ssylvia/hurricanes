@@ -24,11 +24,11 @@
     
       configOptions = {
         //The ID for the map from ArcGIS.com
+		//3 : "78269e9e46734ce28cb113cce7c2e380"
+		//4 : "de02256f84b843b295def8c74ca09526"
         webmaps : [
 			{"id" : "8ba2f1095092496997444f3ba05fea96"},
-			{"id" : "1e02d3c1b3dc4f5cbd76138ab6b149bd"},
-			{"id" : "78269e9e46734ce28cb113cce7c2e380"},
-			{"id" : "de02256f84b843b295def8c74ca09526"}
+			{"id" : "1e02d3c1b3dc4f5cbd76138ab6b149bd"}
 		],
         //Enter a title, if no title is specified, the webmap's title is used.
         title : "TopTen Most damaging hurricanes of all time",
@@ -39,9 +39,7 @@
 		//Enter the titles to be desplayed on tabs, if none are provided the webmap's titles will be used
 		tabTitles : [
 			{"title" : "1"},
-			{"title" : "2"},
-			{"title" : "3"},
-			{"title" : "4"}
+			{"title" : "2"}
 		],
 		//Display description in side panel
 		displayDescription : true,
@@ -90,14 +88,15 @@
         	<div id="timeSliderDiv"></div>
         </div><!--/timeSliderArea-->
         
-        <!--Tab Area-->
-        <div id="tabArea" dojotype="dijit.layout.ContentPane" region="bottom">
-        </div><!--/tabArea-->
       
       </div><!--/banner-->
       
       <!--Content-->
       <div id="content" dojotype="dijit.layout.BorderContainer" gutters="false" region="center">
+
+        <!--Tab Area-->
+        <div id="tabArea" dojotype="dijit.layout.ContentPane" region="left">
+        </div><!--/tabArea-->
       
       	<!--Sidebar Section-->
         <div dojotype="dijit.layout.ContentPane" id="leftPane" region="left">
