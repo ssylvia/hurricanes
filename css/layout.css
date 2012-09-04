@@ -129,7 +129,7 @@ h1{
 }
 
 .tabText{
-	font-family:Tahoma, Geneva, sans-serif;
+	font-family:Georgia, "Times New Roman", Times, serif;
 	font-size:20px;
 	text-overflow: ellipsis;
     -o-text-overflow:ellipsis;
