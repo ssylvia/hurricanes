@@ -28,7 +28,7 @@ function addTabsAndTime(){
 		dojo.style(dojo.byId("banner"), "height", "150px");
 	}
 	else if (configOptions.webmaps.length > 1 && timeInterface == false){
-		dojo.style(dojo.byId("banner"), "height", "150px");
+		dojo.style(dojo.byId("banner"), "height", "115px");
 	}
 	dijit.byId("mainWindow").layout();
 	setupLayout();
