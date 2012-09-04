@@ -104,24 +104,24 @@ h1{
 	height:100%;
 	width:50px;
 	padding-left:0px;
-	background-color:#FFC;
+	background-color:#7c7c7c;
 }
 
 .tab{
-	background:#828282;
+	background:#7c7c7c;
 	height:30px;
 	width:50px;
 	float:left;
 	white-space:nowrap;
 	cursor:pointer;
+	color:#b6b6b6;
 }
 
 .tab:hover{
-	background-color:#c4c4c4;
+	background-color:#fe0000;
 }
 
 .tabText{
-	color:#fff;
 	font-family:Arial, Helvetica, sans-serif;
 	text-overflow: ellipsis;
     -o-text-overflow:ellipsis;
@@ -130,7 +130,8 @@ h1{
 }
 
 .selected{
-	background:#c4c4c4;
+	background-color:#fe0000;
+	color:#FFFFFF;
 }
 
 #leftPane {
