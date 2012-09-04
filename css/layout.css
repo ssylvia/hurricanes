@@ -115,6 +115,13 @@ h1{
 	white-space:nowrap;
 	cursor:pointer;
 	color:#b6b6b6;
+	border-bottom:thin;
+	border-top:thin;
+	border-bottom-color:#FFFFFF;
+	border-top-color:#FFFFFF;
+	border-top-style:solid;
+	border-bottom-style:solid;
+	margin-top:-1px;
 }
 
 .tab:hover{
