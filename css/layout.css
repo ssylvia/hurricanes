@@ -152,7 +152,8 @@ h1{
 	  
 #descriptionPanel {
 	height:45%;
-	overflow:auto;
+	overflow-x:hidden;
+	overflow-y:auto;
 }
 
 .description{
