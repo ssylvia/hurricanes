@@ -144,8 +144,8 @@ h1{
 }
 
 #leftPane {
-    width:22%;
-	min-width:300px;
+    width:30%;
+	min-width:350px;
 	height:100%;
 	font-size:0.9em;
 }
