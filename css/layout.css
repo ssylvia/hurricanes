@@ -264,8 +264,13 @@ g,v{
 }
 
 .slider {
-	width:100%;
+	width:300px;
 	height:300px;
-	background-color:#3CF;
 	overflow:hidden;
+	margin:auto;
+	position:relative;
+}
+
+.slider img {
+	position:absolute;
 }

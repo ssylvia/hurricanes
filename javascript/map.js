@@ -155,7 +155,7 @@ function createMap(){
 				}
 			}
 			
-			var $fader,$images;
+			var $fader,$images,$img;
 			
 			if (configOptions.webmaps.length > 1){
 				dojo.byId("tabText"+i).innerHTML = configOptions.tabTitles[i].title || response.itemInfo.item.title || "";
@@ -166,7 +166,9 @@ function createMap(){
 				$("#description"+i).append($fader);
 				$("#description"+i).append(response.itemInfo.item.description || "");
 				$images = $("#description"+i).find("img").detach();
-				$($fader).append($images[0]);
+				$img = $images[0];
+				$($fader).append($img);			
+				setTimeout(function(){$($fader).pictureframe()},1000);
 			}
 			
 			var layers = response.itemInfo.itemData.operationalLayers;
@@ -212,7 +214,6 @@ function createMap(){
 	
 	setupLayout();
 }
-
 
 function initUI(layers,index,map) {
 	//add chrome theme for popup
