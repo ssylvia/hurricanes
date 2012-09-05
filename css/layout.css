@@ -262,3 +262,11 @@ g,v{
 .dijitToggleButton, .dijitButton, .dijitDropDownButton, .dijitComboButton{
 	display:none;
 }
+
+.slider {
+	width:100%;
+	height:200px;
+	background-color:#3CF;
+	margin:auto;
+	margin-bottom:20px
+}

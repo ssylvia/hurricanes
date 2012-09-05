@@ -149,13 +149,17 @@ function createMap(){
 				dojo.byId("description0").innerHTML = configOptions.description|| response.itemInfo.item.description || "";
 				if (configOptions.webmaps.length > 1){
 					dojo.byId("title0").innerHTML = response.itemInfo.item.title || "";
-					dojo.byId("description0").innerHTML = response.itemInfo.item.description || "";
+					$("#description0").empty();
+					$("#description0").append("<div class='slider'>Image slider will go here.</div>");
+					$("#description0").append(response.itemInfo.item.description || "");
 				}
 			}
 			if (configOptions.webmaps.length > 1){
 				dojo.byId("tabText"+i).innerHTML = configOptions.tabTitles[i].title || response.itemInfo.item.title || "";
 				dojo.byId("title"+i).innerHTML = response.itemInfo.item.title || "";
-				dojo.byId("description"+i).innerHTML = response.itemInfo.item.description || "";
+				$("#description"+i).empty();
+				$("#description"+i).append("<div class='slider'>Image slider will go here.</div>");
+				$("#description"+i).append(response.itemInfo.item.description || "");				
 			}
 			
 			var layers = response.itemInfo.itemData.operationalLayers;
