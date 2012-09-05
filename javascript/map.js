@@ -154,12 +154,19 @@ function createMap(){
 					$("#description0").append(response.itemInfo.item.description || "");
 				}
 			}
+			
+			var $fader,$images;
+			
 			if (configOptions.webmaps.length > 1){
 				dojo.byId("tabText"+i).innerHTML = configOptions.tabTitles[i].title || response.itemInfo.item.title || "";
 				dojo.byId("title"+i).innerHTML = response.itemInfo.item.title || "";
 				$("#description"+i).empty();
-				$("#description"+i).append("<div class='slider'>Image slider will go here.</div>");
-				$("#description"+i).append(response.itemInfo.item.description || "");				
+				
+				$fader = $("<div class='slider'></div>");
+				$("#description"+i).append($fader);
+				$("#description"+i).append(response.itemInfo.item.description || "");
+				$images = $("#description"+i).find("img").detach();
+				$($fader).append($images[0]);
 			}
 			
 			var layers = response.itemInfo.itemData.operationalLayers;
