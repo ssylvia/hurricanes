@@ -76,6 +76,7 @@ function changeMap(index){
 				dojo.style(dojo.byId("legend"+i),"display","block");
 				dojo.style(dojo.byId("title"+i),"display","block");
 				dojo.style(dojo.byId("description"+i),"display","block");
+				positionImage();	
 			}
 		});
 		dojo.place(currentMap,dojo.byId('mapPane'),'last');

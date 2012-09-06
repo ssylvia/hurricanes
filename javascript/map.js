@@ -167,6 +167,11 @@ function createMap(){
 				$("#description"+i).append(response.itemInfo.item.description || "");
 				$images = $("#description"+i).find("img").detach();
 				$img = $images[0];
+				if (i == 0) {
+					$($img).load(function(e) {
+						positionImage();
+					});
+				}
 				$($fader).append($img);			
 			}
 			
@@ -195,6 +200,7 @@ function createMap(){
 					}
 				});
 				centerTimeDisplay();
+				positionImage();
 			});
        
 	  	});
@@ -212,6 +218,20 @@ function createMap(){
 	});
 	
 	setupLayout();
+}
+
+function positionImage() {
+	var img, frame, top, left;
+	$.each($(".description"),function(index,value){
+		img = $(this).find("img");
+		frame = $(this).find(".slider");
+		if ($(img).width() > 0) {
+			top = ($(frame).height() - $(img).height()) / 2;
+			left = ($(frame).width() - $(img).width()) / 2;
+			$(img).css("top",top);
+			$(img).css("left",left);			
+		}
+	});
 }
 
 function initUI(layers,index,map) {
