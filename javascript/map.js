@@ -168,7 +168,6 @@ function createMap(){
 				$images = $("#description"+i).find("img").detach();
 				$img = $images[0];
 				$($fader).append($img);			
-				setTimeout(function(){$($fader).pictureframe()},1000);
 			}
 			
 			var layers = response.itemInfo.itemData.operationalLayers;

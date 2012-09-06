@@ -273,4 +273,6 @@ g,v{
 
 .slider img {
 	position:absolute;
+	max-height:300px;
+	max-width:300px;
 }
