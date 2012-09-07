@@ -114,8 +114,9 @@ function createMap(){
 		dojo.place("<div id='mapDiv"+i+"' class='map'></div>",dojo.byId('mapPane'),"last");
 		if (configOptions.webmaps.length > 1){
 			dojo.place("<h3 id='title"+i+"' class='mapTitle'></h3>",dojo.byId('descriptionPanel'),"last");
-			dojo.place("<div id='tab"+i+"' class='tab' onclick='changeMap("+i+")'><p id='tabText"+i+"' class='tabText'></p></div>",dojo.byId('tabArea'),"last");
+			dojo.place("<div id='tab"+i+"' class='tab' onclick='changeMap("+i+")'><p id='tabText"+i+"' class='tabText'></p><img src='images/pointerthingie.png'/></div>",dojo.byId('tabArea'),"last");
 			dojo.addClass(dojo.byId("tab0"),"selected");
+			$("#tab0 img").css("visibility","visible");
 		}
 		dojo.place("<div id='description"+i+"' class='description'></div>",dojo.byId('descriptionPanel'),"last");
 		dojo.place("<div id='legend"+i+"' class='legend'></div>",dojo.byId('legendPanel'),"last");

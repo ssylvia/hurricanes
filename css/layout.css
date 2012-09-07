@@ -105,6 +105,7 @@ h1{
 	width:50px;
 	padding-left:0px;
 	background-color:#7c7c7c;
+	overflow:visible;
 }
 
 .tab{
@@ -122,10 +123,18 @@ h1{
 	border-top-style:solid;
 	border-bottom-style:solid;
 	margin-top:-1px;
+	position:relative;
 }
 
 .tab:hover{
 	background-color:#fe0000;
+}
+
+.tab img {
+	left:50px;
+	top:15px;
+	position:absolute;
+	visibility:hidden
 }
 
 .tabText{

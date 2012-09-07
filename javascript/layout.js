@@ -57,7 +57,9 @@ function changeMap(index){
 		dojo.forEach(dojo.query(".tab"),function(node){
 			dojo.removeClass(node,"selected");
 		});
+		$(".tab img").css("visibility","hidden");
 		dojo.addClass(dojo.byId("tab"+cm),"selected");
+		$("#tab"+cm+" img").css("visibility","visible");		
 		dojo.forEach(_maps,function(map,i){
 			if(cm != i){
 				dojo.fadeOut({
