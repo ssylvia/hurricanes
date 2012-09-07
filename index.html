@@ -80,6 +80,13 @@
       //show map on load 
       dojo.addOnLoad(init);
     </script>
+    
+    <!--Social Media Links-->
+    <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+    <script type="text/javascript">stLight.options({publisher: "77225c91-2742-42f7-b1b4-bddda99a9bde"}); </script>
+    <!--END Social Media Links-->
+    
+    
   </head>
 
   <body onResize="resetLayout()" class="tundra">
@@ -95,6 +102,8 @@
             <p id="subtitle"></p>
           </div><!--/titleText-->
           <div id="logoArea" dojotype="dijit.layout.ContentPane" region="right">
+            <div id="social"><a id="smLink" href="http://storymaps.esri.com" target="_blank">A story map </a><span class='st_facebook'></span><span class='st_twitter'></span></div>
+            <div id="logo"><a id="logoLink" href="http://www.esri.com" target="_blank"><img id="logoImg" src="images/esriGlobeLogow.png" alt="Esri - Home"></a></div>          
           </div><!--/logoArea-->
         </div><!--/header-->
         
