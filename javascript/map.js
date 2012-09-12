@@ -145,8 +145,8 @@ function createMap(){
 			
 			if (i == 0){
 				document.title = configOptions.title|| response.itemInfo.item.title || "";
-        		dojo.byId("title").innerHTML = configOptions.title ||response.itemInfo.item.title;
-        		dojo.byId("subtitle").innerHTML = configOptions.subtitle|| response.itemInfo.item.snippet || "";
+        		//dojo.byId("title").innerHTML = configOptions.title ||response.itemInfo.item.title;
+        		//dojo.byId("subtitle").innerHTML = configOptions.subtitle|| response.itemInfo.item.snippet || "";
 				dojo.byId("description0").innerHTML = configOptions.description|| response.itemInfo.item.description || "";
 				if (configOptions.webmaps.length > 1){
 					dojo.byId("title0").innerHTML = response.itemInfo.item.title || "";

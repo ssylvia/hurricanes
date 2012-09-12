@@ -37,6 +37,7 @@
 			{"id" : "02e43ad0ec1c4234820f51a7734c6753"},
 			{"id" : "be6253ba32ce4258b3c06a03ae4af65d"}
 		],
+		//Note: hard-coded title and subtitle, so these variables will have no effect in the header.
         //Enter a title, if no title is specified, the webmap's title is used.
         title : "TopTen Most damaging hurricanes of all time",
         //Enter a subtitle, if not specified the ArcGIS.com web map's summary is used
@@ -98,8 +99,8 @@
         <!--Header-->
       	<div id="headerArea" dojotype="dijit.layout.BorderContainer" region="top">
           <div id="titleText" dojotype="dijit.layout.ContentPane" region="center">
-          	<h1 id="title"></h1>
-            <p id="subtitle"></p>
+          	<h1 id="title"><span style="color:red">TopTen</span> most damaging U.S. hurricanes of all time</h1>
+            <p id="subtitle">A NOAA study estimated the potential damage past storms might have caused if they had struck in the early 2000s. Worst of all: an unnamed 1926 hurricane that nearly leveled Miami. Also: explore a <a href="http://storymaps.esri.com/ac/hurricanes/" style="color:white">sixty-year hurricane timeline.</a></p>
           </div><!--/titleText-->
           <div id="logoArea" dojotype="dijit.layout.ContentPane" region="right">
             <div id="social"><a id="smLink" href="http://storymaps.esri.com" target="_blank">A story map </a><span class='st_facebook'></span><span class='st_twitter'></span></div>
