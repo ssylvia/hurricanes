@@ -101,6 +101,16 @@ function initMap(){
         configOptions.bingmapskey = urlObject.query.bingMapsKey;      
       }
 	  
+    $("#legendToggle").click(function() {
+        if ($("#legendDiv").css('display') == 'none') {
+            $("#legTogText").html('LEGEND ▲');
+        }
+        else {
+            $("#legTogText").html('LEGEND ▼');
+        }
+        $("#legendDiv").slideToggle();
+    });	  
+	  
 	createMap();
 }
 
