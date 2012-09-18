@@ -229,6 +229,8 @@ function createMap(){
 	});
 	
 	setupLayout();
+	dijit.byId("mainWindow").layout();
+	$("#legendCon").css("right",0);	
 }
 
 function positionImage() {
